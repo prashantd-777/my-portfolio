@@ -1,0 +1,71 @@
+@use "../../../App" as App;
+
+$themeColor: App.$base-main-color;
+
+.btnLink {
+  color: #444 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 200;
+  position: relative;
+  display: inline-block;
+  text-decoration: none !important;
+  -webkit-transition: ease all 0.3s;
+  -moz-transition: ease all 0.3s;
+  -o-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+
+.btnLink:after {
+  content: "";
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0.5;
+  -webkit-transition: ease all 0.3s;
+  -moz-transition: ease all 0.3s;
+  -o-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+
+.btnLink:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: #444;
+  -webkit-transition: ease all 0.3s;
+  -moz-transition: ease all 0.3s;
+  -o-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+
+.btnLink:hover:after {
+  width: 10px;
+  left: -15px;
+}
+
+.btnLink:hover:before {
+  width: 100%;
+  transition-delay: 0.4s
+}
+
+.btnLinkWhite {
+  color: #fff !important;
+}
+
+.btnLinkWhite:before {
+  background: #fff;
+}
+
+.themeAfter:after {
+  background: $themeColor;
+  background: -webkit-linear-gradient(to right, $themeColor, $themeColor);
+  background: linear-gradient(to right, $themeColor, $themeColor);
+}

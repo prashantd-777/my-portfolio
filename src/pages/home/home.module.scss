@@ -1,0 +1,94 @@
+/*---------------------------------
+* 06. Home Banner
+-----------------------------------*/
+.fullScreen {
+  min-height: 100vh;
+}
+
+.homeBanner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  //background-position: right center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  //background: #000;
+  background-image: url("../../../public/images/computer-image2.jpg");
+
+  .homeTextCenter {
+    position: relative;
+    padding-left: 45px;
+    z-index: 1;
+  }
+
+  .homeTextCenter:after {
+    width: 5px;
+    left: 1px;
+    top: 5px;
+    bottom: 0;
+    content: "";
+    position: absolute;
+  }
+
+  h4 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 5px;
+  }
+
+  h1 {
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 15px;
+  }
+
+  p {
+    width: 600px;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0 0 35px;
+    color: #fff;
+    margin: 0;
+  }
+
+  .m-btn {
+    min-width: 140px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+
+}
+
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+  .homeBanner .homeTextCenter {
+    padding-left: 25px;
+  }
+  .homeBanner .homeTextCenter:after {
+    width: 3px;
+  }
+  .homeBanner h4 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 5px;
+  }
+  .homeBanner h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+  }
+  .homeBanner p {
+    font-size: 14px;
+    padding: 0 0 20px;
+  }
+  .homeBanner .btnLink {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,27 @@
+
+.mainButton {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.mainButtonTheme {
+  color: #fff;
+}
+
+.mainButtonTheme:hover {
+  color: #fff;
+  background: #151515;
+}

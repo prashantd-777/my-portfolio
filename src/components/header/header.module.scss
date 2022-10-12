@@ -1,0 +1,118 @@
+.headerNav {
+  top: 10px !important;
+  padding: 15px 10px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  .navbar-toggler span {
+    background: #fff;
+  }
+  .navbarBrand {
+    color: #fff;
+    font-weight: 800;
+    position: relative;
+    font-size: 23px;
+    &:hover {
+      color: #fff;
+    }
+    span {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 12px;
+      right: -9px;
+      float: left;
+      background: #00c6ff;
+    }
+  }
+}
+
+.headerNav .navbarNav > li {
+  margin: 0 0 0 20px;
+}
+.headerNav .navbarNav .navLink {
+  position: relative;
+  padding: 0;
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: top;
+  color: #ececec;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.215em;
+}
+.headerNav .navbarNav .navLink:after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  width: 0;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  margin: auto;
+  height: 1px;
+  background: #fff;
+  -webkit-transition: ease all 0.2s;
+  -moz-transition: ease all 0.2s;
+  -o-transition: ease all 0.2s;
+  transition: ease all 0.2s;
+
+}
+.headerNav .navbarNav .navLink:hover:after,
+.headerNav .navbarNav .navLink.active:after {
+  width: 75%;
+}
+
+/*Navbar Toogle*/
+.navbar-toggler {
+  border: none;
+  padding: 10px 6px;
+  outline: none !important;
+}
+.navbar-toggler span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;
+}
+.navbar-toggler span + span {
+  margin-top: 4px;
+  width: 18px;
+}
+.navbar-toggler span + span + span {
+  width: 10px;
+}
+/**/
+
+
+.headerNav.fixed-header {
+  top: 0;
+  margin-top: 0;
+  padding: 12px 10px;
+  background: #111;
+  box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 991px){
+
+  .headerNav {
+    top: 0;
+    padding:10px 15px;
+  }
+  .headerNav.fixed-header {
+    padding:10px 15px;
+  }
+  .navbarNav {
+    padding-top: 5px;
+  }
+  .headerNav .navbarNav > li {
+    margin: 8px 0;
+  }
+  .headerNav .navbarNav .navLink {
+    padding: 0;
+  }
+}
