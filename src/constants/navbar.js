@@ -1,21 +1,21 @@
 export const NAVBAR_LIST = [
     {
-        id:1,
+        id: "HOME",
         name: "Home",
         href: "#"
     },
     {
-        id: 2,
+        id: "ABOUT_US",
         name: "About Us",
         href: "#"
     },
     {
-        id: 3,
-        name: "Blog",
+        id: "SERVICES",
+        name: "Services",
         href: "#"
     },
     {
-        id: 4,
+        id: "CONTACT_US",
         name: "Contact",
         href: "#"
     }

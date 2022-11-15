@@ -5,7 +5,7 @@ const MouseIcon = ({
                        link = ""
                    }) => {
     return (
-        <a href={link} data-scroll="smooth"
+        <a href={`#${link}`} data-scroll="smooth"
            className={`${s.mouseIcon}`}><span className={`${s.wheel}`}></span></a>
     )
 }

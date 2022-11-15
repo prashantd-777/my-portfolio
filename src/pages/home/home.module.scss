@@ -1,15 +1,13 @@
 /*---------------------------------
-* 06. Home Banner
+* Home Banner
 -----------------------------------*/
 .fullScreen {
   min-height: 100vh;
+  height: 100%;
 }
 
 .homeBanner {
   position: relative;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  //background-position: right center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,7 +17,6 @@
 
   .homeTextCenter {
     position: relative;
-    padding-left: 45px;
     z-index: 1;
   }
 

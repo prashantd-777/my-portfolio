@@ -1,0 +1,22 @@
+/*---------------------------------
+* Services
+-----------------------------------*/
+
+.servicesContainer {
+  position: relative;
+  background: #000;
+  .skillLeft {
+    h3 {
+      color: #fff;
+      font-weight: 600;
+      margin: 0 0 20px;
+      font-size: 22px;
+    }
+    p{
+      color: #fff
+    }
+  }
+  .skillRight {
+
+  }
+}

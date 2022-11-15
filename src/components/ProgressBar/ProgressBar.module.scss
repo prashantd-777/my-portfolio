@@ -1,0 +1,46 @@
+@use "../../App" as App;
+
+$themeColor: App.$base-main-color;
+
+.progressLT {
+  margin-top: 25px;
+  position: relative;
+  h6 {
+    display: inline-block;
+    width: 47%;
+    color: #fff;
+    margin: 0;
+    padding: 0 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 1.5%;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  .progress {
+    margin-bottom: 0;
+    height: 6px;
+    border-radius: 50px;
+  }
+
+  .progressBar {
+    width: 0;
+    -webkit-transition: width 1.2s ease;
+    -moz-transition: width 1.2s ease;
+    -o-transition: width 1.2s ease;
+    transition: width 1.2s ease;
+    background: $themeColor;
+    background: -webkit-linear-gradient(to right, $themeColor, $themeColor);
+    background: linear-gradient(to right, $themeColor, $themeColor);
+  }
+}
+.progressLT:first-child {
+  margin-top: 0;
+}

@@ -1,3 +1,6 @@
+@use "../../App" as App;
+
+$themeColor: App.$base-main-color;
 
 .sideMenuContainer {
   width: 300px;
@@ -49,9 +52,15 @@
         opacity: 1;
         display: block;
         margin: 8px 0;
+        a {
+          cursor: pointer;
+        }
+        .active {
+          color: $themeColor;
+          text-decoration: underline;
+        }
       }
     }
-
   }
 
   .btnClose {

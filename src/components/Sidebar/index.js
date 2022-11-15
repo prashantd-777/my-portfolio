@@ -1,10 +1,12 @@
+import React, {useEffect, useRef} from "react";
 import s from "./Sidebar.module.scss";
 import {NAVBAR_LIST} from "../../constants/navbar";
-import {useEffect, useRef} from "react";
 
 const Sidebar = ({
                      isMenuOpen = false,
-                     handleToggleMenu,
+                     activeTab = "HOME",
+                     handleLinkClick,
+                     handleToggleMenu
                  }) => {
 
     const boxRef = useRef(null);
@@ -15,6 +17,7 @@ const Sidebar = ({
                 handleToggleMenu();
             }
         }
+
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
@@ -31,7 +34,12 @@ const Sidebar = ({
                         {NAVBAR_LIST.map(item => {
                             return (
                                 <li key={item.id} className={s.navItem}>
-                                    <a className="nav-link" href={item.href}>
+                                    <a
+                                        className={`nav-link ${(activeTab === item?.id) ? s.active : ""}`}
+                                        href={`#${item.id}`}
+                                       onClick={handleLinkClick}
+                                        data-target={item?.id}
+                                    >
                                         {item.name}
                                     </a>
                                 </li>

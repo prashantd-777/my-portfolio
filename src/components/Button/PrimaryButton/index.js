@@ -1,13 +1,12 @@
 import React from "react";
+import s from "./PrimaryButton.module.scss";
 
 const PrimaryButton = ({
                            label = "",
                            onClick,
-                           showIcon = false
-
                        }) => {
     return (
-        <button onClick={onClick}>
+        <button className={`${s.mainButton}`} onClick={onClick}>
             {label}
         </button>
     )

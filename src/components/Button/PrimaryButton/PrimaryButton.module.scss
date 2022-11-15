@@ -15,13 +15,16 @@
   outline: none;
   display: inline-block;
   text-decoration: none;
+  background: #0072ff;
+  color: #fff;
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, #0072ff, #00c6ff);;
 }
 
 .mainButtonTheme {
   color: #fff;
 }
 
-.mainButtonTheme:hover {
-  color: #fff;
-  background: #151515;
+.mainButton:hover {
+box-shadow: 0 15px 20px rgb(5 117 230 / 40%);
 }
