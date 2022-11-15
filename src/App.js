@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import AboutUs from "./pages/about-us";
 import Sidebar from "./components/Sidebar";
 import MouseIcon from "./components/MouseIcon";
+import Portfolio from "./pages/skills";
 import Services from "./pages/services";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <MouseIcon link={"ABOUT_US"} />
             <Home />
             <AboutUs />
+            <Portfolio />
             <Services />
         </main>
 

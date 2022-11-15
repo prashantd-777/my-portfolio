@@ -1,0 +1,46 @@
+@use "../../../App" as App;
+
+$themeColor: App.$base-main-color;
+.featureBox {
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 27px -3px rgba(0, 0, 0, 0.2);
+  .icon {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 30px;
+    -webkit-transition: ease all 0.3s;
+    -moz-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+    transition: ease all 0.3s;
+    background: $themeColor;
+  }
+
+  h5 {
+    font-size: 16px;
+    color: #151515;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0 0 25px;
+    color: #383838;
+  }
+}
+
+.featureBox:hover .icon {
+  background: #333;
+}

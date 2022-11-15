@@ -10,6 +10,11 @@ export const NAVBAR_LIST = [
         href: "#"
     },
     {
+        id: "SKILLS",
+        name: "My Skills",
+        href: "#"
+    },
+    {
         id: "SERVICES",
         name: "Services",
         href: "#"
