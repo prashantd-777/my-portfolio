@@ -4,3 +4,4 @@ const cu = path => {
 };
 
 export const COMPUTER_BG = cu("computer-bg.jpg")
+export const RESUME_BG = cu("resume-bg.jpg")

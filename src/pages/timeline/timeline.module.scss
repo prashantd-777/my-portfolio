@@ -4,5 +4,54 @@
 
 .timelineContainer {
   position: relative;
-  background: #000;
+  background: url("../../../public/images/resume-bg.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 60%);
+  .education {
+    border-left: 1px solid #999;
+    padding-top: 20px;
+    margin-top: 20px;
+    .resumeItem{
+      margin-bottom: 24px;
+      margin-left: 20px;
+      position: relative;
+      .resYear {
+        background: #fff;
+        width: 100px;
+        text-align: center;
+        color: #000;
+        padding: 2px 0;
+        margin-bottom: 6px;
+        font-weight: 500;
+      }
+      .resYear::before {
+        content: "";
+        width: 35px;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        top: 12px;
+        left: -25px;
+      }
+      .resTitle{
+        font-weight: 700;
+        font-size: 16px;
+        padding: 5px 0;
+        color: #fff;
+      }
+      .resDesc {
+        color: #fff;
+      }
+    }
+    .resumeItem::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      position: absolute;
+      left: -27px;
+      border-radius: 20px;
+      top: 6px;
+    }
+  }
 }

@@ -9,6 +9,8 @@ import Sidebar from "./components/Sidebar";
 import MouseIcon from "./components/MouseIcon";
 import Portfolio from "./pages/skills";
 import Services from "./pages/services";
+import Timeline from "./pages/timeline";
+import Work from "./pages/work";
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,6 +44,8 @@ function App() {
             <AboutUs />
             <Portfolio />
             <Services />
+            <Timeline />
+            <Work />
         </main>
 
     </>

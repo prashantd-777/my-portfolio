@@ -1,0 +1,45 @@
+/*---------------------------------
+* Work
+-----------------------------------*/
+
+.workContainer {
+  position: relative;
+  background: url("../../../public/images/work-bg.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 60%);
+  .workItem {
+    max-width: 420px;
+    margin: 0 auto;
+    background: rgba(0,0,0,.6);
+    padding: 12px;
+    text-align: center;
+    .workTitle {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #dedede;
+      margin-top: 5px;
+    }
+  }
+  .workArrow {
+    width: 1px;
+    height: 34px;
+    border-left: 1px solid #fff;
+    position: relative;
+    margin: 0 auto 2px;
+  }
+  .workArrow::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 10px 6px 0;
+    position: absolute;
+    bottom: -1px;
+    left: -7px;
+  }
+}

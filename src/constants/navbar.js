@@ -20,8 +20,14 @@ export const NAVBAR_LIST = [
         href: "#"
     },
     {
+        id: "TIMELINE",
+        name: "Timeline",
+        href: "#"
+    },
+
+    {
         id: "CONTACT_US",
         name: "Contact",
         href: "#"
     }
-]
+];
