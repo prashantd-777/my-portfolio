@@ -4,6 +4,7 @@ import React from "react";
 import ProgressBar from "../../components/ProgressBar";
 import {SKILLS_LIST} from "../../constants/skills";
 import SectionTitle from "../../components/SectionTitle";
+import Polygon from "../../components/Polygon";
 
 const Skills = () => {
     return (
@@ -42,6 +43,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
+            <Polygon />
         </section>
     )
 }

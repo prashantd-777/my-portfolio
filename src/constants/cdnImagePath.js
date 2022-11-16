@@ -3,5 +3,6 @@ const cu = path => {
     return (originUrl) + "/images/" + path;
 };
 
-export const COMPUTER_BG = cu("computer-bg.jpg")
-export const RESUME_BG = cu("resume-bg.jpg")
+export const COMPUTER_BG = cu("computer-bg.jpg");
+export const RESUME_BG = cu("resume-bg.jpg");
+export const RED_HEART = cu("red-heart.svg");

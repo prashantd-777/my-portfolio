@@ -1,12 +1,13 @@
 import s from "./work.module.scss";
 import SectionTitle from "../../components/SectionTitle";
+import Polygon from "../../components/Polygon";
 
 const Work = () => {
     return (
         <section id={"WORK"} className={`${s.workContainer}`}>
             <div className={"container"}>
                 <div className="row py-5 min-vh-100">
-                    <div className={`col-12`}>
+                    <div className={`col-12 mb-3`}>
                         <SectionTitle label={"HOW I WORK"}/>
                     </div>
                     <div className={"col-md-12"}>
