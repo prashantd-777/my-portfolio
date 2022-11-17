@@ -5,6 +5,7 @@ import MouseIcon from "../../components/MouseIcon";
 import Title from "../../components/Title";
 import Overlay from "../../components/Overlay";
 import Typewrite from "../../components/Typewrite";
+import {PRASHANT_RESUME} from "../../constants/cdnImagePath";
 
 const Home = () => {
     return (
@@ -26,7 +27,7 @@ const Home = () => {
                                     user experience, usability and speed for multiple types of end-users. Successful at
                                     maintaining customer satisfaction through effective customer support.</p>
                                 <div className="btn-bar">
-                                    <LinkButton link={"#"} label={"Download CV"}/>
+                                    <LinkButton target={"_blank"} url={PRASHANT_RESUME} label={"Download CV"} download={true} />
                                 </div>
                             </div>
                         </div>

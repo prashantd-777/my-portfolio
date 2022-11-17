@@ -8,10 +8,6 @@ export const NAVBAR_LIST = [
         name: "About Us",
     },
     {
-        id: "SKILLS",
-        name: "My Skills",
-    },
-    {
         id: "SERVICES",
         name: "Services",
     },

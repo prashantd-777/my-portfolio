@@ -4,10 +4,13 @@ import s from "./LinkButton.module.scss";
 const LinkButton = ({
                         url = "",
                         label = "",
-                        classes = ""
+                        classes = "",
+                        target = "",
+                        download = false
                     }) => {
     return (
-        <a href={url} className={`${s.btnLink} ${s.btnLinkWhite} ${s.themeAfter} ${classes}`}>
+        <a href={url} target={target} className={`${s.btnLink} ${s.btnLinkWhite} ${s.themeAfter} ${classes}`}
+           download={download}>
             {label}
         </a>
     )

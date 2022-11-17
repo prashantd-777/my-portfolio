@@ -31,5 +31,9 @@
       font-size: 15px;
       color: #fff;
     }
+    a {
+      z-index: 1;
+      position: relative;
+    }
   }
 }

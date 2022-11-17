@@ -37,7 +37,7 @@ const Sidebar = ({
                                     <a
                                         className={`nav-link ${(activeTab === item?.id) ? s.active : ""}`}
                                         href={`#${item.id}`}
-                                       onClick={handleLinkClick}
+                                        onClick={handleLinkClick}
                                         data-target={item?.id}
                                     >
                                         {item.name}

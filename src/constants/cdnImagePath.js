@@ -3,7 +3,12 @@ const cu = path => {
     return (originUrl) + "/images/" + path;
 };
 
-export const COMPUTER_BG = cu("computer-bg.jpg");
+const cuPDF = path => {
+    const originUrl =  window?.location?.origin;
+    return (originUrl) + "/pdf/" + path;
+};
+
 export const RESUME_BG = cu("resume-bg.jpg");
 export const RED_HEART = cu("red-heart.svg");
 export const PROFILE_IMG = cu("profile.png");
+export const PRASHANT_RESUME = cuPDF("prashant-resume.pdf");

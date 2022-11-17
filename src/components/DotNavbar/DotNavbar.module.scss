@@ -1,0 +1,38 @@
+
+.mainContainer {
+  color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  right: 17px;
+
+  li {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 15px;
+    position: relative;
+    a span {
+      top: 0;
+      width: 10px;
+      height: 10px;
+      border: 0;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      background: #909090;
+    }
+  }
+
+  .active a span {
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer {
+    display: none;
+  }
+}

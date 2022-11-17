@@ -6,13 +6,12 @@ import Home from "./pages/home";
 import 'bootstrap/dist/css/bootstrap.css';
 import AboutUs from "./pages/about-us";
 import Sidebar from "./components/Sidebar";
-import MouseIcon from "./components/MouseIcon";
-import Portfolio from "./pages/skills";
 import Services from "./pages/services";
 import Timeline from "./pages/timeline";
 import Work from "./pages/work";
 import BackToTop from "./components/BackToTop";
 import Contact from "./pages/contact";
+import DotNavbar from "./components/DotNavbar";
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,12 +52,14 @@ function App() {
             handleToggleMenu={handleToggleMenu}
             handleLinkClick={handleLinkClick}
         />
+        <DotNavbar
+            activeTab={activeTab}
+            handleDotClick={setActiveTab}
+        />
         <BackToTop />
-
         <main>
             <Home />
             <AboutUs />
-            <Portfolio />
             <Services />
             <Timeline />
             <Work />

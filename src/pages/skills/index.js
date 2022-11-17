@@ -31,17 +31,7 @@ const Skills = () => {
                     </div>
 
                     <div className={"col-md-6"}>
-                        <div className={`${s.skillRight}`}>
-                            {SKILLS_LIST.map(item => {
-                                return (
-                                    <ProgressBar
-                                        key={item?.id}
-                                        label={item?.label}
-                                        value={item?.value}
-                                    />
-                                )
-                            })}
-                        </div>
+
                     </div>
                 </div>
             </div>
