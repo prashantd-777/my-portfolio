@@ -4,7 +4,7 @@ import s from "./Typewrite.module.scss";
 const Typewrite = () => {
     return (
         <h1>
-            <a className={`typewrite ${s.typewrite}`} data-period="2000"
+            <a href={""} className={`typewrite ${s.typewrite}`} data-period={"2000"}
                data-type={`[ "Hi, I am Prashant Dawkhar", "I am a Web Developer" ]`}>
                 <span className={`wrap`}></span>
             </a>
