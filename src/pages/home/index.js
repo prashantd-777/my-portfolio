@@ -4,8 +4,8 @@ import LinkButton from "../../components/Button/LinkButton";
 import MouseIcon from "../../components/MouseIcon";
 import Title from "../../components/Title";
 import Overlay from "../../components/Overlay";
-import Typewrite from "../../components/Typewrite";
 import {PRASHANT_RESUME} from "../../constants/cdnImagePath";
+import Typer from "../../components/Typer";
 
 const Home = () => {
     return (
@@ -20,7 +20,13 @@ const Home = () => {
                     <div className={`row align-items-center min-vh-100`}>
                         <div className="col col-md-12 col-lg-8 col-xl-6">
                             <div className={`${s.homeTextCenter}`}>
-                                <Typewrite/>
+                                <Typer
+                                    heading="Hi"
+                                    dataText={[
+                                        "I'm Prashant Dawkhar",
+                                        "I'm a Web Developer",
+                                    ]}
+                                />
                                 <p>Goal-oriented Web Developer with a strong commitment to collaboration and
                                     solutions-oriented problem-solving. Use various web design software to develop
                                     customer-focused websites and designs. Committed to high standards of web design,
