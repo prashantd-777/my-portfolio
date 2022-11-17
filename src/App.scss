@@ -1,5 +1,7 @@
 @import "styles/variables";
 
+$themeColor: $base-main-color;
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,4 +14,12 @@ body::-webkit-scrollbar-thumb {
 .showBtn {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+.active {
+  color: $themeColor !important;
+}
+
+.defaultDotActive span {
+  background: #fff !important;
 }

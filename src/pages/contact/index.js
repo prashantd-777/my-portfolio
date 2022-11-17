@@ -33,7 +33,7 @@ const Contact = () => {
                                 iconClass={"fa fa-envelope"}
                                 label={"Email:"}
                                 desc={(
-                                    <a href={"mailto:dawkharp79@gmail.com"} target={"_blank"}>
+                                    <a href={"mailto:dawkharp79@gmail.com"} target={"_blank"} rel="noreferrer" >
                                         dawkharp79@gmail.com
                                     </a>
                                 )}

@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./about-us.module.scss";
-import LinkButton from "../../components/Button/LinkButton";
 import PrimaryButton from "../../components/Button/PrimaryButton";
 import Title from "../../components/Title";
 import Overlay from "../../components/Overlay";

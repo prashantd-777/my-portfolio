@@ -15,14 +15,35 @@ import DotNavbar from "./components/DotNavbar";
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [activeTab, setActiveTab] = useState("HOME");
 
     useEffect(() => {
+        document.querySelector(".navigation a[href*=" + "HOME" + "]").classList.add("active");
+        document.querySelector(".dot-navigation a[href*=" + "HOME" + "]").classList.add("defaultDotActive");
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll, false)
     }, []);
 
     const handleScroll = () => {
+        let scrollY = window?.pageYOffset;
+        const sections = document.querySelectorAll("section[id]");
+
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 50;
+            let sectionId = current.getAttribute("id");
+
+            if (
+                scrollY > sectionTop &&
+                scrollY <= sectionTop + sectionHeight
+            ){
+                document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+                document.querySelector(".dot-navigation a[href*=" + sectionId + "]").classList.add("defaultDotActive");
+            } else {
+                document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+                document.querySelector(".dot-navigation a[href*=" + sectionId + "]").classList.remove("defaultDotActive");
+            }
+        });
+
         let scrollToTopBtn = document.querySelector("#BACK_TO_TOP");
         if (window.scrollY > 300) {
             scrollToTopBtn.classList.add("showBtn")
@@ -36,7 +57,6 @@ function App() {
     }
 
     const handleLinkClick = (e) => {
-        setActiveTab(e?.target?.dataset?.target);
         setIsMenuOpen(false);
     }
 
@@ -48,14 +68,10 @@ function App() {
         />
         <Sidebar
             isMenuOpen={isMenuOpen}
-            activeTab={activeTab}
             handleToggleMenu={handleToggleMenu}
             handleLinkClick={handleLinkClick}
         />
-        <DotNavbar
-            activeTab={activeTab}
-            handleDotClick={setActiveTab}
-        />
+        <DotNavbar/>
         <BackToTop />
         <main>
             <Home />

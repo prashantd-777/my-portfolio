@@ -54,10 +54,7 @@ $themeColor: App.$base-main-color;
         margin: 8px 0;
         a {
           cursor: pointer;
-        }
-        .active {
-          color: $themeColor;
-          text-decoration: underline;
+          text-decoration: none;
         }
       }
     }

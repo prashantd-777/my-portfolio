@@ -33,8 +33,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <MouseIcon link={"ABOUT_US"}/>
             </section>
-            <MouseIcon link={"ABOUT_US"}/>
         </>
     )
 }

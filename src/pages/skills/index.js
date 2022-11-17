@@ -1,8 +1,6 @@
+import React from "react";
 import s from "./skills.module.scss";
 import PrimaryButton from "../../components/Button/PrimaryButton";
-import React from "react";
-import ProgressBar from "../../components/ProgressBar";
-import {SKILLS_LIST} from "../../constants/skills";
 import SectionTitle from "../../components/SectionTitle";
 import Title from "../../components/Title";
 

@@ -1,6 +1,5 @@
 
 .mainContainer {
-  color: rgb(0, 0, 0);
   position: fixed;
   z-index: 100;
   margin-top: -32px;
@@ -24,10 +23,6 @@
       z-index: 1;
       background: #909090;
     }
-  }
-
-  .active a span {
-    background: #fff;
   }
 }
 
