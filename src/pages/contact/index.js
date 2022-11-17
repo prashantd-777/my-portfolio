@@ -41,7 +41,11 @@ const Contact = () => {
                             <LabelText
                                 iconClass={"fa fa-globe"}
                                 label={"Website:"}
-                                desc={"prashantdawkhar79.com"}
+                                desc={(
+                                    <a href={"https://www.prashantdawkhar.com/"} target={"_blank"} rel="noreferrer" >
+                                        prashantdawkhar.com
+                                    </a>
+                                )}
                             />
                             <div className={`${s.socialIcons}`}>
                                 <p>Find:</p>
