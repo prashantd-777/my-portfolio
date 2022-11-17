@@ -1,10 +1,13 @@
+import React from "react";
 import s from "./work.module.scss";
 import SectionTitle from "../../components/SectionTitle";
-import Polygon from "../../components/Polygon";
+import Title from "../../components/Title";
 
 const Work = () => {
     return (
         <section id={"WORK"} className={`${s.workContainer}`}>
+            <Title label={"HOW I WORK"} />
+
             <div className={"container"}>
                 <div className="row py-5 min-vh-100">
                     <div className={`col-12 mb-3`}>

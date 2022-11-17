@@ -12,9 +12,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  //background: #000;
-  background-image: url("../../../public/images/computer-image2.jpg");
-
+  background-image: url("../../../public/images/contact-bg.jpg");
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 60%);
   .homeTextCenter {
     position: relative;
     z-index: 1;

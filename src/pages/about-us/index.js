@@ -1,13 +1,16 @@
 import React from "react";
 import s from "./about-us.module.scss";
-import {COMPUTER_BG} from "../../constants/cdnImagePath";
+import {COMPUTER_BG, PROFILE_IMG} from "../../constants/cdnImagePath";
 import LinkButton from "../../components/Button/LinkButton";
 import PrimaryButton from "../../components/Button/PrimaryButton";
 import Polygon from "../../components/Polygon";
+import Title from "../../components/Title";
 
 const AboutUs = () => {
     return (
         <section id={"ABOUT_US"} className={`${s.aboutContainer}`}>
+            <Title label={"ABOUT ME"} />
+
             <div className="container">
                 <div className="row align-items-center py-5 min-vh-100">
                     <div className="col-md-6">
@@ -27,7 +30,7 @@ const AboutUs = () => {
                     </div>
 
                     <div className="col-md-6 text-center">
-                        <img width={350} src={COMPUTER_BG} title="" alt=""/>
+                        <img width={350} src={PROFILE_IMG} title="" alt=""/>
                     </div>
 
                     <div className={"col-md-12"}>

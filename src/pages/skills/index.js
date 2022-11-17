@@ -5,10 +5,13 @@ import ProgressBar from "../../components/ProgressBar";
 import {SKILLS_LIST} from "../../constants/skills";
 import SectionTitle from "../../components/SectionTitle";
 import Polygon from "../../components/Polygon";
+import Title from "../../components/Title";
 
 const Skills = () => {
     return (
         <section id={"SKILLS"} className={`${s.skillContainer}`}>
+            <Title label={"MY SKILLS"} />
+
             <div className="container">
                 <div className="row py-5 min-vh-100">
                     <div className={`col-12`}>

@@ -5,10 +5,14 @@ import SocialIcons from "../../components/SocialIcons";
 import {SOCIAL_LIST} from "../../constants/social";
 import {RED_HEART} from "../../constants/cdnImagePath";
 import Polygon from "../../components/Polygon";
+import Title from "../../components/Title";
+import React from "react";
 
 const Contact = () => {
     return (
         <section id={"CONTACT"} className={`${s.contactContainer}`}>
+            <Title label={"CONTACT ME"} />
+
             <div className={"container"}>
                 <div className="row py-5 min-vh-100">
                     <div className={`col-12 mb-3`}>

@@ -1,10 +1,14 @@
 import s from "./timeline.module.scss";
 import SectionTitle from "../../components/SectionTitle";
 import {EDUCATION_DATA} from "../../constants/education";
+import Title from "../../components/Title";
+import React from "react";
 
 const Timeline = () => {
     return (
         <section id={"TIMELINE"} className={`${s.timelineContainer}`}>
+            <Title label={"MY TIMELINE"} />
+
             <div className="container">
                 <div className="row py-5 min-vh-100">
                     <div className={`col-12`}>
