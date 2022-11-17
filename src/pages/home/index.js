@@ -21,10 +21,10 @@ const Home = () => {
                         <div className="col col-md-12 col-lg-8 col-xl-6">
                             <div className={`${s.homeTextCenter}`}>
                                 <Typer
-                                    heading="Hi"
+                                    heading="I'm"
                                     dataText={[
-                                        "I'm Prashant Dawkhar",
-                                        "I'm a Web Developer",
+                                        "Prashant Dawkhar",
+                                        "a Web Developer",
                                     ]}
                                 />
                                 <p>Goal-oriented Web Developer with a strong commitment to collaboration and
