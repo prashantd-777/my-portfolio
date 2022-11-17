@@ -10,7 +10,7 @@ import React from "react";
 
 const Contact = () => {
     return (
-        <section id={"CONTACT"} className={`${s.contactContainer}`}>
+        <section id={"CONTACT_US"} className={`${s.contactContainer}`}>
             <Title label={"CONTACT ME"} />
 
             <div className={"container"}>

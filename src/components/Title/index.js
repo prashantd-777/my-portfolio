@@ -2,12 +2,11 @@ import s from "./Title.module.scss";
 
 const Title = ({
                    label = "",
-    left = 50,
-    right = 50
+                   isAdjust = false
                }) => {
     return (
         <div className={`${s.titleContainer}`}>
-            <p>{label}</p>
+            <p className={`${isAdjust ? s.doAdjust : s.defaultAdjust}`}>{label}</p>
         </div>
     )
 }

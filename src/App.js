@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './App.scss';
-import Loader from "./components/loader";
-import Header from "./components/header";
+import Loader from "./components/Loader";
+import Header from "./components/Header";
 import Home from "./pages/home";
 import 'bootstrap/dist/css/bootstrap.css';
 import AboutUs from "./pages/about-us";

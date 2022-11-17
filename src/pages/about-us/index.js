@@ -3,12 +3,13 @@ import s from "./about-us.module.scss";
 import {COMPUTER_BG, PROFILE_IMG} from "../../constants/cdnImagePath";
 import LinkButton from "../../components/Button/LinkButton";
 import PrimaryButton from "../../components/Button/PrimaryButton";
-import Polygon from "../../components/Polygon";
 import Title from "../../components/Title";
+import Overlay from "../../components/Overlay";
 
 const AboutUs = () => {
     return (
         <section id={"ABOUT_US"} className={`${s.aboutContainer}`}>
+            <Overlay />
             <Title label={"ABOUT ME"} />
 
             <div className="container">
@@ -30,11 +31,7 @@ const AboutUs = () => {
                     </div>
 
                     <div className="col-md-6 text-center">
-                        <img width={350} src={PROFILE_IMG} title="" alt=""/>
-                    </div>
-
-                    <div className={"col-md-12"}>
-                        <Polygon />
+                        {/*<img width={350} src={PROFILE_IMG} title="" alt=""/>*/}
                     </div>
                 </div>
             </div>

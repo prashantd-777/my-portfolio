@@ -23,7 +23,6 @@
     background: #fff;
     position: absolute;
     top: 12px;
-    left: 50px;
   }
   p::after {
     content: "";
@@ -32,15 +31,19 @@
     background: #fff;
     position: absolute;
     top: 12px;
+  }
+
+  .defaultAdjust::before {
+    left: 50px;
+  }
+  .defaultAdjust::after {
     right: 50px;
   }
-}
 
-#HOME .titleContainer {
-  p::before {
-    left: 69px;
+  .doAdjust::before {
+    left: 70px;
   }
-  p::after {
+  .doAdjust::after {
     right: 75px;
   }
 }

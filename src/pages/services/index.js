@@ -11,7 +11,7 @@ const Services = () => {
             <Title label={"MY SERVICES"} />
 
             <div className="container">
-                <div className="row align-items-center py-5 min-vh-100">
+                <div className="row py-5 min-vh-100">
                     <div className={`col-12`}>
                         <SectionTitle label={"WHAT I OFFER"} />
                     </div>
