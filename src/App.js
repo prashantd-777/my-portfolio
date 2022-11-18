@@ -12,10 +12,6 @@ import Work from "./pages/work";
 import BackToTop from "./components/BackToTop";
 import Contact from "./pages/contact";
 import DotNavbar from "./components/DotNavbar";
-import ReactGA from 'react-ga';
-
-const TRACKING_ID = "G-RR63S6YQ6S"; // OUR_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
