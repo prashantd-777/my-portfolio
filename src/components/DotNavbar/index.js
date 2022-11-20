@@ -9,7 +9,7 @@ const DotNavbar = () => {
                     return (
                         <li
                             key={item?.id}
-                            title={item?.id}
+                            title={item?.name}
                         >
                             <a href={`#${item?.id}`}>
                                 <span/>
